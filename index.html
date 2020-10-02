@@ -1,0 +1,1384 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ashutosh Jha(Aj)</title>
+	<link rel="icon" type="png" href="logo-f-p.png">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+ <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+	
+
+
+<!-- #00FFAB -->
+
+	<style type="text/css">
+		html{
+			cursor: url(cursor.png),auto;
+transition: 0.5s;
+scroll-behavior: smooth;
+overflow-x: hidden;
+		}
+*{
+	font-family: 'Titillium Web', sans-serif;
+	
+}
+button{
+cursor: url(hand.png),auto;
+}
+:root {
+  --animate-duration: 1500ms;
+  --animate-delay: 0.9s;
+}
+	#loader{
+		z-index: 999999999999999!important;
+		width: 100%;
+		height: 100%;
+		background-color:white;
+		margin: auto;
+		position: fixed;
+		background-image: url('loader.gif');
+		background-size:40%;
+		background-repeat: no-repeat;
+		background-position: center;	
+		
+		
+	}
+  
+	
+	#pattern
+	{
+		background: url("allbg.png") repeat-y;
+		background-attachment: fixed;
+	    padding-top: 100px;
+		background-size: cover;
+		height: 100%;
+		width: 100%;
+
+
+	}	
+
+	#navicon img
+	{
+		width: 100px;
+		height: 80px;
+		cursor: url(hand.png),auto;
+		position: absolute;
+		top: 40px;
+		left: 85.8%;
+
+		transform: rotateZ(40deg);
+		z-index:9999;
+		
+	}
+
+	#nav-bg
+	{
+		list-style: none;
+		position: absolute;
+		top: 0px;
+		left:0%;
+		background: url("allbg.png") repeat-y;
+
+		background-attachment: fixed;
+	    padding-top: 100px;
+		background-size: cover;
+	background-color:white;
+		border-radius: 180px;
+		width: 180px;
+		height: 180px;
+		padding: 50px;
+		transition: 1s;
+		z-index:99999;
+		visibility: hidden;
+		overflow-x: hidden;
+		overflow-y: hidden;
+		
+
+	}
+	#nav-i{
+		margin: auto;
+		text-align: center;
+		padding-top: 0PX;
+	color: white;
+    width: 40%;
+    color: #00FFAB;
+	border-top: 2px solid #00ffab;
+	border-bottom: 2px solid #00ffab;
+	transition: 0.5s;
+	margin-top: 50px;
+		
+	}
+
+	#nav-i:hover{
+		color: #00FFAB ;
+	border-top: 4px solid black;
+	border-bottom: 4px solid black;
+	background-color: black;
+
+	}
+
+	#close{
+		position: relative;
+	left:40%;
+	color: red!important;
+	border-top: none!important;
+	border-bottom: none!important;
+	cursor: url(hand.png),auto;
+	text-align: center;
+	
+	
+	}
+	
+	.fa-close{
+	
+
+	}
+	
+		#div-1{
+         height: 100vh;
+         transition: 0.2s;
+         background: #00FFAB;
+         	background:linear-gradient(to top left,blue,#00FFAB 50%); 
+         	background-position: right;	
+         	
+
+         }
+
+		button:focus{
+        outline:none;
+		}
+
+		#nav
+		{
+			list-style: none;
+			position: absolute;
+			top: 25%;
+			left: 2%;
+			
+			text-align: center;
+			width: 200px;
+			text-align: center;
+
+		}
+
+		#nav li{
+			margin-top: 50px;
+			font-weight: bolder;
+			font-size: 25px;
+			color: black;
+			border-top: 2px solid white;
+			border-bottom:2px solid white;
+			padding: 5px; 
+			text-align: center;
+			transition: .5s;
+
+
+
+		}
+		#nav li:hover{
+			color: #00FFAB;
+			background-color: black;
+			border-top: 5px solid white;
+			border-bottom:5px solid white;
+             cursor: pointer;
+			transition: 0.5s;
+			cursor: url(hand.png),auto;
+			
+			
+		}
+		#home-icon{
+			position: absolute;
+			top: 34%;
+			left: 90%;
+
+		}
+		#icon-1{
+			border-top:1px solid white;
+			border-bottom: 2px solid black;
+			margin-top: 15px;
+			height: 50px;
+			width: 50px;
+			border-radius: 50px;
+			padding-top: 10px;
+			text-align: center;
+			color:black;
+			background-color: white;
+			transition: 0.5s;
+     	   }
+		#icon-1:hover{
+			background-color: black;
+			color: #00ffab;
+			border: none;
+			cursor: url(hand.png),auto;
+		
+		}
+		#icon-2{
+			visibility: hidden;
+		}
+		#icon-1 i{
+			font-weight: bolder;
+			font-size: 20px;
+
+		}
+		#logo{
+			width: 40%;
+			height: 40%;
+			transition: 0.7s;
+		margin-top: 3.6%!important;
+		box-shadow: 0 0 10px 0 black;
+		margin: auto;
+			
+			
+
+		}
+		#logo-1{
+			width: 90px;
+			height: 100px;
+			position: absolute;
+			top:50px;
+			left: 6%;
+		}
+
+       #l-b{
+	background-color: #00FFAB;
+	border: 2px solid white;
+	padding: 17px;
+	width: 180px;
+	box-shadow: 8px 8px 2px 1px black;
+	margin-left: 25px;
+	font-weight: 900;
+	font-style: italic;
+	border-top-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	transition:0.7s;
+	margin-top: 40px;
+    border-top: 2px solid black;
+	overflow-x: hidden;
+	
+}
+#f-but{
+	width: 100%;
+	
+}
+#l-b:hover{
+	background:black; 
+	color: black;
+	box-shadow: 8px 8px 2px 1px white;
+	border-top-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	cursor: url(hand.png),auto;
+	background:radial-gradient(#00FFAB,blue);
+}
+.fa-angle-right{
+	color: white;
+	font-size: 21px;
+position: relative;
+top: 4px;	
+	font-weight:900;
+	animation: anii 0.8s linear infinite;
+	overflow: hidden;
+}
+#l-icon{
+	color: white;
+	animation: anii 1s  linear infinite;
+	overflow: hidden;
+}
+@keyframes anii{
+	0%{
+      position: relative;
+      left:0px;
+	}
+	25%{
+      position: relative;
+      left:10px;
+	}
+	50%{
+      position: relative;
+      left:20px;
+	}
+	75%{
+      position: relative;
+      left:25px;
+	}
+	100%{
+      position: relative;
+      left:30px;
+	}
+}
+	
+	/*<section-1>*/	
+	#know{
+		font-size: 40px;
+		font-weight: bold;
+		margin-top: 100px;
+		line-height: 29px;
+
+
+	}
+	#know-p{
+		padding-top: 25px;
+		color: #696461;
+		font-weight: 700;
+		letter-spacing: 2px;
+		
+	}
+	
+	#sec-1-p{
+		
+		border: 4PX solid #00ffab;
+        font-weight: bolder;
+		color: #00ffab;
+		text-shadow: 0 0 4px black, 0 0 2px #00FFAB;
+		height: 100px;
+		padding-top: 28px;
+		width: 100%;
+		letter-spacing: 2px;
+		background:linear-gradient(to top left,#00000090,#00000090),url("divbg.jpg");
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+		transition: 0.2s;
+
+	
+	}
+	#sec-1-p:hover{
+		box-shadow: 0 0 10px 4px black;
+		font-size: 22px;
+		border: 5PX solid #00ffab;
+		transform:rotate3d( -2, -10, -2, -0.1turn);
+		background:linear-gradient(to top left,#00000050,#00000050),url("divbg.jpg");
+		background-position: center;
+	}
+	#img-sec-1{
+		height: 100px;
+		width: 100px;
+		margin-top: 50px;
+		margin-bottom: 25px;
+	}
+	
+	/*//skills//*/
+
+#skills{
+	    font-size: 40px;
+		font-weight: bold;
+		line-height: 29px;
+		margin-top: 100px;
+}
+#skills-p{
+		padding-top: 25px;
+		color: #696461;
+		font-weight: 700;
+		letter-spacing: 2px;
+		margin-bottom: 20px;
+
+}
+#sec-2-p{
+	
+        font-weight: bolder;
+		color: #00ffab;
+		
+		height: 100px;
+		padding-top: 28px;
+		width: 100%;
+		letter-spacing: 2px;
+		
+}
+.icon{
+  color: #00ffab;
+  font-size: 35px;
+  text-shadow: 0 0 2px black, 0 0 2px #00ffab;
+}
+#sec-2-div{
+	background:linear-gradient(to top left,#00FFAB,#00000090);
+	padding: 5px 5px 20px 5px;
+	margin-top: 50px;
+
+}
+
+#sec-2-div-2{
+	background:linear-gradient(to top left,#00000099,#00000099),url("divbg.jpg");
+background-attachment: unset;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	padding-top: 20px;
+}
+
+/*//section 3//*/
+
+#sec-3{
+	border: 5px solid  white;
+	padding-bottom: 50px;
+	background-color: #3351FF;
+
+
+}
+#div-3-img{
+	width: 100%;
+	height: 100%;
+    margin-top: 20px;
+	box-shadow: 0 0 10px 2px black;	
+	transition: 0.5s;
+
+}
+#div-3-img:hover{
+	box-shadow: 0 7px 20px 2px #00FFAB;	
+}
+#btn-sec-3{
+	color:black;
+	font-weight: bolder;
+	border: 1px solid black;
+	border-top-left-radius:10px;
+	border-bottom-right-radius: 10px;
+	margin-top: 40px;
+	box-shadow: 0 0 5px 0;
+	background-color: #00FFAB;
+	padding: 10px;
+	transition: 0.5s;
+	padding-left: 15px;
+	padding-right: 15px;
+	background-position: initial;
+	box-shadow: 0 0 5px 2px;	
+	width: 60%;
+	font-size: 14 px;
+}
+#btn-sec-3:hover{
+	box-shadow: 0 0 10px 4px;
+	background:radial-gradient(#00FFAB,blue);
+	background-position: left;
+	width: 80%;
+	
+}
+/*<!-- <last sec> -->*/
+
+#l-img{
+	width: 29%;
+	height: 29%;
+	margin-bottom: 0px;
+}
+#btn-sec-4{
+	color:black;
+	font-weight: bolder;
+	border: 1px solid black;
+	border-top-left-radius:10px;
+	border-bottom-right-radius: 10px;
+	margin-top: 40px;
+	box-shadow: 0 0 5px 0;
+	background-color: #00FFAB;
+	padding: 10px;
+	transition: 0.5s;
+	padding-left: 15px;
+	padding-right: 15px;
+	background-position: initial;
+	box-shadow: 0 0 5px 2px;
+	width: 40%;	
+
+}
+#btn-sec-4:hover{
+	box-shadow: 0 0 10px 4px;
+	background:radial-gradient(#00FFAB,blue);
+	background-position: left;
+	width: 60%;
+	
+}
+#top{
+	
+
+	padding: 7px;
+	text-align: center;
+	margin: auto;	
+	
+	
+	
+}
+@keyframes ani{
+	0%{
+color:yellow;
+position: relative;
+top: 2px;
+	}
+	20%{
+color:red;
+
+	}
+	40%{
+color:blue;
+
+	}
+	60%{
+color:cyan;
+
+	}
+	80%{
+color:orange;
+
+	}
+	100%{
+color:pink;
+position: relative;
+top: 10px;
+	}
+}
+.fa-angle-double-up{
+	color:lime;
+	font-size:25px; 
+	animation: ani 1.3s linear infinite;
+
+
+}
+
+#sec-4{
+	background-color: #000039;
+	padding: 20px 0 20px 0;
+	overflow-x: hidden;
+}
+#sec-4-2{
+	margin-top: 120px!important;
+
+}
+#sec-4-2 i{
+	font-size: 25px;
+	padding-right: 10px;
+	color: #00FFAB;
+
+}
+#sec-4 h1{
+color: white;
+font-size: 25px;
+padding-bottom: 20px;
+
+}
+#sec-4 p{
+	color: #00FFAB;
+	font-size: 18px;
+	transition: 0.4s!important;
+
+}
+
+#sec-4-3{
+	margin-top: 120px!important;
+}
+#sec-4-3 i{
+	font-size: 25px;
+	padding-right: 10px;
+	color: #00FFAB;
+
+}
+#sec-4-3 h4{
+	color: #00FFAB;
+}
+
+#sec-4-2 p:hover{
+	margin-left: 20px;
+	font-size: 20px;
+}
+
+/*//responsive section//*/
+
+@media (min-width: 1325px)
+{
+
+}
+
+@media (min-width: 1024px) and (max-width: 1324px)
+{
+  #logo{
+		margin-top: 150px!important;
+		width:450px;
+		
+		}
+		#sec-2-div-2{
+			height: 150px;
+		}
+		#sec-2-p{
+			font-size: 12px;
+		}
+		#home-icon{
+			position: absolute;
+			top: 29%;
+			left: 90%;
+		}
+
+	#pattern{
+		background: url("allbg.png") repeat-y;
+		background-attachment: fixed;
+	    padding-top: 100px;
+		background-size: contain;
+		height: 100%;
+		width: 100%;
+}	
+}
+
+@media (min-width: 768px) and (max-width: 1024px)
+{
+ #logo{
+		margin-top: 290px!important;
+		width:350px;
+		text-align: center;
+		margin-left: 120px!important;
+		}
+		#l-b{
+			margin-left: 120px!important;
+		}
+		#home-icon{
+			position: absolute;
+			top: 31%;
+			left: 90%;
+		}
+
+		#sec-2-div-2{
+			height: 120px;
+		}
+		#know,#skills{
+			font-size: 29px;
+
+		}
+		#img-sec-1{
+			width: 70px;
+			height: 70px;
+		}
+		#know-p,#skills-p{
+			font-size: 14px;
+		}
+
+		#sec-1-p{
+			font-size: 14px;
+			height: 80px;
+		}
+		#sec-2-div-2 i{
+			font-size: 20px;
+		}
+		#sec-2-p{
+			font-size: 8px;
+		}
+		#btn-sec-3{
+			font-size: 10px;
+		}
+		h4{
+			font-size: 18px;
+		}
+		#btn-sec-4{
+			font-size: 10px;	
+			margin-top: 70px;	
+		}
+
+		#pattern
+		{
+		background: url("allbg.png") repeat-y;
+		background-attachment: fixed;
+	    padding-top: 100px;
+		background-size: contain;
+		height: 100%;
+		width: 100%;
+        }	
+
+
+
+}
+ 
+ @media (min-width: 459px) and (max-width: 767px){
+ #logo{
+		margin-top: 250px!important;
+		width:290px;
+		text-align: center;
+		margin-left: auto!important;
+		}
+		
+		#l-b
+		{
+			width: 170px;
+			height: 65px;
+			text-align: left;
+			margin: auto;
+			margin-top: 20px;
+			font-size: 15px;
+		}
+		#loader{
+		z-index: 999999999999999!important;
+		width: 100%;
+		height: 100%;
+		background-color:white;
+		margin: auto;
+		position: fixed;
+		background-image: url('loader.gif');
+		background-size:60%;
+		background-repeat: no-repeat;
+		background-position: center;	
+		
+		
+	}
+#nav
+{
+	visibility: hidden;
+
+}
+#navicon img{
+		width: 120px;
+		height: 60px;
+		cursor: url(hand.png),auto;
+		position: absolute;
+		top: 50px;
+		left: 75.8%;
+		transform: rotateZ(28deg);
+		visibility: visible;
+	}
+#home-icon
+{
+	
+	position: absolute;
+	top: 33.7%;
+	left: 85%!important;
+}
+#icon-1{
+	float: right;
+}
+
+
+#img-sec-1{
+			width: 70px;
+			height: 70px;
+		}
+		#know,#skills{
+			font-size: 29px;
+
+		}
+		#know-p,#skills-p{
+			font-size: 14px;
+		}
+
+		
+		
+
+#pattern
+		{
+		background: url("allbg.png") repeat-y;
+		background-attachment: fixed;
+	    padding-top: 100px;
+		background-size: contain;
+		height: 100%;
+		width: 100%;
+        }	
+ }
+
+ @media (min-width:320px) and (max-width: 458px)
+ {
+
+ 	#navicon img{
+		width: 120px;
+		height: 60px;
+		cursor: url(hand.png),auto;
+		position: absolute;
+		top: 50px;
+		left: 70.8%;
+		transform: rotateZ(28deg);
+		visibility: visible;
+		width: 80px;
+	}
+    #logo{
+		margin-top: 180px!important;
+		width:190px;
+		text-align: center;
+		margin-left: auto!important;
+		}
+		
+		#l-b
+		{
+			width: 120px;
+			height: 50px;
+			text-align: left;
+			margin: auto;
+			margin-top: 20px;
+			font-size: 12px;
+			overflow-y: hidden;
+		}
+		#loader{
+		z-index: 999999999999999!important;
+		width: 100%;
+		height: 100%;
+		background-color:white;
+		margin: auto;
+		position: fixed;
+		background-image: url('loader.gif');
+		background-size:80%;
+		background-repeat: no-repeat;
+		background-position: center;	
+		
+		
+	}
+		#nav
+		{
+			visibility: hidden!important;
+		}
+		.fa-angle-right{
+			font-size: 15px;
+		}
+		#icon-1{
+	visibility: hidden;
+		}
+
+		#home-icon{
+	
+	position: absolute;
+	top: 500px;
+	left:0%!important;
+	
+	width: 100%;
+	height: 100px;
+
+}
+#img-sec-1{
+	width: 60px;
+	height: 60px;
+}
+#know,#skills{
+			font-size: 24px;
+
+		}
+		#know-p,#skills-p{
+			font-size: 14px;
+
+		}
+		#sec-2-div-2 i{
+			font-size: 24px;
+		}
+		#icon-2{
+border-top:5px solid #00ffab;
+			border-bottom: 5px solid #00ffab;
+			margin-top: 7px;
+			height: 80px;
+			width: 80px;
+			border-radius: 100px;
+			padding-top: 0px;
+			text-align: center;
+			color:#00ffab;
+			background-color: black;
+			transition: 0.5s;
+			padding: 12px;
+			box-shadow: 0 0 5px 0 black;
+			visibility: visible;
+			
+			
+		}
+
+		#icon-2:hover{
+			background-color: white;
+			color: black;
+			border: none;
+			cursor: url(hand.png),auto;
+		}
+		#icon-2 i{
+			font-size: 15px;
+			position: relative;
+			top: 0px;
+
+
+		}
+
+#pattern
+		{
+		background: url("allbg.png") repeat-y;
+		background-attachment: fixed;
+	    padding-top: 100px;
+		background-size: contain;
+		height: 100%;
+		width: 100%;
+        }
+
+
+#sec-1-p{
+	font-size: 12px;
+	height: 80px;
+}
+  
+#sec-2-p{
+	font-size: 12px;
+}
+        #btn-sec-3{
+        	font-size: 10px!important;
+        }
+		
+		#btn-sec-4{
+			margin-top: 80px;
+			font-size: 12px;
+		}
+
+		#sec-4-2 h1{
+			font-size: 20px;
+		}
+		#sec-4-2 p{
+			font-size: 14px;
+		}
+
+		#sec-4-3 h1{
+			font-size: 20px;
+		}
+		#sec-4-3 h4{
+			font-size: 14px;
+		}
+ }
+ @media(min-width: 319px)
+{
+	html{
+		scroll-behavior: smooth;	
+		overflow-x: hidden;
+	}
+}
+
+	</style>
+</head>
+<body onload="loader();">
+<div id="loader"></div>
+	<div id="navicon" onclick="navfunction();" >
+		<img src="nav-icon.png">
+		
+	</div>
+	
+		<ul  id="nav-bg" >
+			 <li  class="animate__animated animate__fadeInLeft" onclick="closee();" id="close" ><i  class="fa fa-close"></i></li>
+        <li id="nav-i" class="animate__animated animate__fadeInLeft" style="border-top: 2px solid #00ffab;
+	border-bottom: 2px solid #00ffab;">Home</li>
+		<li  id="nav-i"class="animate__animated animate__fadeInLeft">Projects</li>
+		<li id="nav-i" class="animate__animated animate__fadeInLeft">About</li>
+		<li  id="nav-i" class="animate__animated animate__fadeInLeft">Contact</li>
+	</ul>
+
+
+	<div class="container-fluid" id="div-1">
+	<div class="text-center">
+		<div class="text-center m-auto" class="animate__animated animate__rubberBand">
+<img class="m-auto" src="logo-f.png" id="logo" >
+</div>
+
+<div class="container-fluid text-center" id="f-but" >
+<button  id="l-b" class="animate__animated animate__rubberBand">CONTACT ME<i class="fa fa-angle-right"></i> <i class="fa fa-angle-right" id="l-icon" ></i></button>
+
+	</div>
+<img id="logo-1"  src="logo-f-p.png">
+	<ul id="nav">
+        
+
+		<li class="animate__animated animate__fadeInLeft">Home</li>
+		<li class="animate__animated animate__fadeInLeft">Projects</li>
+		<li class="animate__animated animate__fadeInLeft">About</li>
+		<li class="animate__animated animate__fadeInLeft">Contact</li>
+	</ul>
+
+	<div id="home-icon">
+		
+		<div id="icon-1" class="animate__animated animate__fadeInRight"><i class="fa fa-github-alt"></i></div><br>
+		<div id="icon-1" class="animate__animated animate__fadeInRight"><i  class="fa fa-whatsapp"></i></div><br>
+		<div id="icon-1" class="animate__animated animate__fadeInRight"><i class="fa fa-facebook-f"></i></div><br>
+		<div id="icon-1" class="animate__animated animate__fadeInRight"><i class="fa fa-instagram"></i></div>
+	</div>
+
+	<!-- //only for mobile icons// -->
+
+<span id="home-icon">
+		
+		<span id="icon-2" class="animate__animated animate__fadeInRight"><i class="fa fa-github-alt"></i></span>
+		<span id="icon-2" class="animate__animated animate__fadeInRight"><i  class="fa fa-whatsapp"></i></span>
+		<span id="icon-2" class="animate__animated animate__fadeInRight"><i class="fa fa-facebook-f"></i></span>
+		<span id="icon-2" class="animate__animated animate__fadeInRight"><i class="fa fa-instagram"></i></span>
+	</span>
+    
+
+	</div>
+
+</div>
+
+
+
+
+<!-- //section-1// --> 
+
+<div id="pattern" data-aos="zoom-in">
+
+	<div class="container-fluid text-center"  data-aos="zoom-in-down">
+	 <h1 id="know" class="text-uppercase">KNOWLEDGE<br> ______________</h1> 
+	 <p class="text-capitalize" id="know-p">I have these Knowledge of <br> languages, software and technologies.</p>
+
+	</div>
+
+	<div class="container">
+		<div class="row"  data-aos="fade-right">
+			<div class="col-xl-3 col-lg-3 col-md-3 col-sm-10 col-10 d-block m-auto text-center">
+			    <img src="know.png" id="img-sec-1">
+				<p id="sec-1-p">HTML</p>
+			</div>
+			<div class="col-xl-3 col-lg-3 col-md-3 col-sm-10 col-10 d-block m-auto text-center">
+				<img src="know.png" id="img-sec-1">
+				<p id="sec-1-p">CSS</p>
+			</div>
+			<div class="col-xl-3 col-lg-3 col-md-3 col-sm-10 col-10 d-block m-auto text-center">
+				<img src="know.png" id="img-sec-1">
+				<p id="sec-1-p">SASS</p>
+			</div>
+
+			<div class="col-xl-3 col-lg-3 col-md-3 col-sm-10 col-10 d-block m-auto text-center">
+				<img src="know.png" id="img-sec-1">
+				<p id="sec-1-p">BOOTSTRAP</p>
+			</div>
+			<div class="col-xl-3 col-lg-3 col-md-3 col-sm-10 col-10 d-block m-auto text-center" data-aos="fade-left">
+				<img src="know.png" id="img-sec-1">
+				<p id="sec-1-p">JAVASCRIPT</p>
+			</div>
+						<div class="col-xl-3 col-lg-3 col-md-3 col-sm-10 col-10 d-block m-auto text-center" data-aos="fade-left">
+				<img src="know.png" id="img-sec-1">
+				<p id="sec-1-p">ELEMENTOR</p>
+			</div>
+			<div class="col-xl-3 col-lg-3 col-md-3 col-sm-10 col-10 d-block m-auto text-center" data-aos="fade-left">
+				<img src="know.png" id="img-sec-1">
+				<p id="sec-1-p">PHOTOSHOP</p>
+			</div>
+			<div class="col-xl-3 col-lg-3 col-md-3 col-sm-10 col-10 d-block m-auto text-center" data-aos="fade-left" >
+				<img src="know.png" id="img-sec-1">
+				<p id="sec-1-p">PIXLR</p>
+			</div>
+		</div>
+
+		<div class="row"  data-aos="fade-right">
+			<div class="col-xl-3 col-lg-3 col-md-3 col-sm-10 col-10 d-block m-auto text-center">
+				<img src="know.png" id="img-sec-1">
+				<p id="sec-1-p">JQUERY</p>
+			</div>
+			<div class="col-xl-3 col-lg-3 col-md-3 col-sm-10 col-10 d-block m-auto text-center">
+				<img src="know.png" id="img-sec-1">
+				<p id="sec-1-p">PHP</p>
+			</div>
+			<div class="col-xl-3 col-lg-3 col-md-3 col-sm-10 col-10 d-block m-auto text-center">
+				<img src="know.png" id="img-sec-1">
+				<p id="sec-1-p">MYSQL</p>
+			</div>
+			<div class="col-xl-3 col-lg-3 col-md-3 col-sm-10 col-10 d-block m-auto text-center">
+				<img src="know.png" id="img-sec-1">
+				<p id="sec-1-p">WORDPRESS</p>
+			</div>
+
+		</div>
+	</div>
+
+
+
+	
+
+	<!-- //section-2// -->
+
+	<div class="container-fluid text-center" data-aos="zoom-in-down"> 
+		<h1 id="skills" class="text-uppercase">Skills<br> ______________</h1> <p
+	class="text-capitalize" id="skills-p">I have these Skills of <br> Web Development</p>
+	</div>
+
+
+	<div class="container">
+		<div class="row">
+			<div class="col-xl-3 col-lg-3 col-md-3 col-sm-10 col-10 d-block m-auto text-center" data-aos="flip-left">
+				<div id="sec-2-div">
+					<div id="sec-2-div-2">
+			    <i class="fa fa-window-restore icon"></i>
+				<p id="sec-2-p">RESPONSIVE DESIGN</p>
+			</div>
+		</div>
+	</div>
+
+			<div class="col-xl-3 col-lg-3 col-md-3 col-sm-10 col-10 d-block m-auto text-center" data-aos="flip-left">
+				<div id="sec-2-div">
+					<div id="sec-2-div-2">
+			    <i class="fa fa-diamond icon"></i>
+				<p id="sec-2-p">PIXEL PERFECT DESIGN</p>
+			</div>
+		</div>
+  </div>
+			<div class="col-xl-3 col-lg-3 col-md-3 col-sm-10 col-10 d-block m-auto text-center" data-aos="flip-right">
+				<div id="sec-2-div">
+					<div id="sec-2-div-2">
+				<i class="fa fa-bug icon"></i>
+			    <p id="sec-2-p">PROBLEM SOLVING</p>
+			</div>
+		</div>
+	</div>
+			<div class="col-xl-3 col-lg-3 col-md-3 col-sm-10 col-10 d-block m-auto text-center" data-aos="flip-right">
+				<div id="sec-2-div">
+					<div id="sec-2-div-2">
+				<i class="fa fa-puzzle-piece icon"></i>
+			    <p id="sec-2-p">CREATIVE AND UNIQUE UI</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- <section 4> -->
+
+		
+<div class="container-fluid text-center" data-aos="zoom-in-down">
+	 <h1 id="know" class="text-uppercase">projects<br> ______________</h1> 
+	 <p class="text-capitalize" id="know-p">I have some projects to show you</p>
+
+	</div>
+
+	<div class="container" style="margin-bottom: 100px;">
+		<div class="row">
+		<div class="col-xl-4 col-lg-4 col-md-4 col-sm-10 col-10 d-block m-auto text-center" id="sec-3" data-aos="fade-up-right">
+			<img src="BEAST-PRO.png" id="div-3-img">
+			<a href="https://ashuajax.github.io/beast-pro.com/"><button id="btn-sec-3">GO To Beast Pro</button></a>
+		</div>
+
+		<div class="col-xl-4 col-lg-4 col-md-4 col-sm-10 col-10 d-block m-auto text-center" id="sec-3" data-aos="fade-up">
+			<img src="musica-aj.png" id="div-3-img">
+			<a href="http://musical-aj.epizy.com/?i=1" ><button id="btn-sec-3" >GO To Musical Aj</button></a>
+		</div>
+
+		<div class="col-xl-4 col-lg-4 col-md-4 col-sm-10 col-10 d-block m-auto text-center" id="sec-3" data-aos="fade-up-left">
+			<img src="comfy.png" id="div-3-img">
+			<a href="https://ashuajax.github.io/comfy/"><button id="btn-sec-3">GO To Comfy</button></a>
+		</div>
+		
+		</div>
+</div>
+</div>
+
+<!-- <last sec> -->
+		
+
+<div class="container-fluid" id="sec-4" >
+
+	<div class="row">
+
+	<div class="col-xl-4 col-lg-4 col-md-4 col-sm-10 col-10 d-block m-auto text-center" id="sec-4-1" data-aos="flip-left">
+			<img src="logo-f-p.png" id="l-img"><br>
+			<a href="#div-1"><button id="btn-sec-4">GO To Top<span id="top" class="m-auto">
+				<i class="fa fa-angle-double-up"></i>
+			</span></button></a>
+		</div>
+	
+	<div class="col-xl-4 col-lg-4 col-md-4 col-sm-10 col-10 d-block m-auto text-center"  id="sec-4-2" data-aos="zoom-in-down">
+		<h1>Quick Links</h1>
+		<p><i class="fa fa-male"></i>About me</p>
+		<p><i class="fa fa-laptop"></i>Projects</p>
+		<p><i class="fa fa-handshake-o"></i>contact</p>
+	</div>
+
+	<div class="col-xl-4 col-lg-4 col-md-4 col-sm-10 col-10 d-block m-auto text-center"  id="sec-4-3" data-aos="zoom-in-down">
+		<h1 ><i class="fa fa-whatsapp"></i>Whatsapp me</h1>
+	    <h4>+91 8506809129</h4>
+	<br>
+		<h1 ><i class="fa fa-envelope"></i>Email me</h1>
+	<h4>Yesaj9354@gmail.com</h4>
+
+	</div>
+
+	</div>
+
+	
+	
+
+</div>
+</div>
+
+
+
+</body>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <script>
+    AOS.init({
+    	duration:1500,
+    });
+  </script>
+
+
+<script type="text/javascript">
+
+	var div = document.getElementById('div-1');
+	var logo = document.getElementById('logo');
+
+	window.addEventListener('mousemove', function (e) {
+        
+
+       var x = e.x;
+       var y = e.y;
+          
+      if(y>0 & y<211){
+      		
+       	logo.style.transform="rotate3d(10, -2, -1, -0.1turn)";
+      }    
+
+       else if(x>112 & x<211){
+       
+       	logo.style.transform="rotate3d(-5, -25, 1, -0.1turn)";
+       }
+         else if(y>712 & y<811){
+      		
+       	logo.style.transform="rotate3d(-4, -5, -2, -0.1turn)";
+      }  
+        else if(x>212 & x<311){
+        	
+        		logo.style.transform="rotate3d(-5, -25, 1, -0.1turn)";
+        }
+        else if(x>312 & x<411){
+        	
+        	logo.style.transform="rotate3d(2, -2, -1, -0.1turn)";
+        }
+        else if(x>412 & x<511){
+        	
+        	logo.style.transform="rotate3d(-4, -5, -2, -0.1turn)";
+        }
+        else if(x>512 & x<611){
+        	
+        	logo.style.transform="rotate3d(2, -2, -1, -0.1turn)";
+        }
+         else if(x>612 & x<711){
+        	
+        	logo.style.transform="rotate3d(-5, -25, 1, -0.1turn)";
+        }
+         else if(x>712 & x<811){
+        	
+        	logo.style.transform="rotate3d(-4, -5, -2, -0.1turn)";
+        }
+        else if(x>812 & x<911){
+        	
+        	logo.style.transform="rotate3d(-5, -25, 1, -0.1turn)";
+        }
+        else if(x>912 & x<1011){
+        
+        	logo.style.transform="rotate3d(2, -2, -1, -0.1turn)";
+        }
+        else if(x>912 & x<1011){
+        	 logo.style.transform="rotate3d(-4, -5, -2, -0.1turn)";
+        }
+          else if(y>112 & y<211){
+      		
+       	logo.style.transform="rotate3d(2, -2, -1, -0.1turn)";
+      }  
+         else if(x>1012 & x<1111){
+        	
+        	logo.style.transform="rotate3d(-4, -5, -2, -0.1turn)";
+        }
+         else if(x>1112 & x<1211){
+        	
+        logo.style.transform="rotate3d(-5, -25, 1, -0.1turn)";
+        }
+        else if(y>112 & y<211){
+        	
+            logo.style.transform="rotate3d(2, -2, -1, -0.1turn)";
+        }
+         else if(x>1212 & x<1311){
+      
+        	logo.style.transform="rotate3d(-4, -5, -2, -0.1turn)";
+        }
+         else if(x>1312 & x<1411){
+        	
+        	logo.style.transform="rotate3d(-5, -25, 1, -0.1turn)";
+        }
+         else if(x>1412 & x<1511){
+        
+        	logo.style.transform="rotateX(0deg)";
+        }
+        else if(x<112){
+        
+        	logo.style.transform="rotateX(0deg)";
+        }
+	});
+
+</script>
+
+<script type="text/javascript">
+	var logo = document.getElementById('logo');
+	window.addEventListener('scroll',function(){
+  		value = window.scrollY;
+  		console.log(value);
+
+          
+           
+  			logo.style.filter ='blur(' + value / 10 + 'px' ;
+
+  		
+  	});
+</script>
+<script type="text/javascript">
+	var navicon =document.getElementById("navicon");
+	var navbg=document.getElementById("nav-bg");
+	var navi=document.getElementById("nav-i");
+
+function navfunction(){
+
+
+	navbg.style.width="100%";
+	navbg.style.height="100%";
+	navbg.style.position="absolute";
+	navbg.style.top="0px";
+	navbg.style.left="0px";
+	navbg.style.borderRadius="0%";
+	navbg.style.fontSize="40px";
+	navbg.style.visibility="visible";
+	navi.style.visibility="visible";
+
+
+
+}
+
+
+function closee()
+{
+
+	// list-style: none;
+		// position: absolute;
+		// top: 0px;
+		// left: 88%;
+		// background-color: #00FFAB;
+		// border-radius: 180px;
+		// width: 180px;
+		// height: 180px;
+		// padding: 50px;
+		// transition: 1s;
+		// z-index:99999;
+		// visibility: hidden;
+
+	navbg.style.width="180px";
+	navbg.style.height="180px";
+	navbg.style.visibility="hidden";
+	navbg.style.position="absolute";
+	navbg.style.top="0px";
+	navbg.style.left="0px";
+	navbg.style.padding="0px";
+	navbg.style.borderRadius="180px";
+	navbg.style.fontSize="0%";
+	navi.style.visibility="hidden";
+	
+
+
+}
+
+
+
+</script>
+<script type="text/javascript">
+		var load=document.getElementById("loader");
+  	function loader(){
+      load.style.display="none";
+  	}
+</script>
+</html>
